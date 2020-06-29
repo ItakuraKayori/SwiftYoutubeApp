@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import SegementSlide
 
-class ViewController: UIViewController {
+class ViewController: SegementSlideDefaultViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        reloadData()
+        defaultSelectedIndex = 0
     }
 
+    override func segementSlideHeaderView() -> UIView? {
+        <#code#>
+    }
 
 }
 
